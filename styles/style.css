@@ -9,7 +9,6 @@
 
 body {
     font-family: 'JetBrains Mono', monospace;
-   /* overflow: hidden; */
     font-size: 13px;
 }
 
@@ -40,51 +39,45 @@ a {
 
 
 /* PASTAS */
-.container img {
-    width: 75px;
-    display: block;
-}
+/* ... Existing CSS code ... */
 
+/* PASTAS */
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.foldergray {
-    position: absolute;
-    top: 42%;
-    left: 17.5%;
-    outline: none;
-}
-
-.folderblack {
-    position: absolute;
-    top: 8%;
-    left: 52.5%;
-}
-
-.folderyellow {
-    position: absolute;
-    bottom: 25%;
-    left: 62%;
-}
-
-span {
-    position: absolute;
-    text-align: center;
-    bottom: 24%;
-    left: 62%;
-    cursor: pointer;
+.container a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
     color: black;
+    font-size: 12px;
 }
+
+.container img {
+    width: 75px;
+    margin-top: 350px;
+}
+
+.label {
+    margin-top: 0px;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* ... Existing CSS code ... */
 
 /* IMAGEM CENTRO */
 #minicenter {
     position: absolute;
     text-align: center;
     outline: none;
-    bottom: 45%;
+    bottom: 65%;
     right: 48%;
     width: 84px;
     cursor: pointer;
@@ -123,7 +116,10 @@ img:active {
 }
 
 /* PAGES */
-.master, .nudados, .steps, .tour {
+.master,
+.nudados,
+.steps,
+.tour {
     align-items: center;
     overflow: hidden;
     position: inherit;
@@ -131,7 +127,10 @@ img:active {
 }
 
 /* PAGE STEPS */
-.stepspgr, .masterdata, .nudata, .tourpgr {
+.stepspgr,
+.masterdata,
+.nudata,
+.tourpgr {
     position: inherit;
     color: white;
     font-size: 10px;
@@ -139,7 +138,10 @@ img:active {
     pointer-events: none;
 }
 
-#stepsseta, #masterseta, .nusetas, #tourseta {
+#stepsseta,
+#masterseta,
+.nusetas,
+#tourseta {
     color: white;
     margin: 25px;
 }
@@ -152,10 +154,14 @@ img:active {
 }
 
 .stepsimg {
-    position: absolute;
-    width: 40%;
-    margin-left: 45px;
+    display: block;
+    width: 700px;
+    height: 900px;
+    object-fit: cover;
+    margin-left: 10%;
+    margin-bottom: 10px;
 }
+
 
 
 /* PAGE MASTER */
