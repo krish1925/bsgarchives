@@ -191,8 +191,9 @@ img:active {
 .nuimg {
     position: relative;
     top: 30px;
-    left: 15%;
-    width: 256px;
+    left: 0%;
+    bottom: 50px;
+    width: 700px;
 }
 
 /* PAGE TOUR */
